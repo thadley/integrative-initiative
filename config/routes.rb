@@ -1,6 +1,8 @@
 IntegrativeInitiative::Application.routes.draw do
-  get "welcome/home"
-  get "welcome/about"
+
+  resources :conditions
+
+  get 'about' => 'welcome#about'
 
   root 'welcome#home'
 
