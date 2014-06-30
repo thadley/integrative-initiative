@@ -1,9 +1,7 @@
 IntegrativeInitiative::Application.routes.draw do
 
-  get "therapy/index"
-  get "therapy/show"
-
   resources :conditions
+  resources :therapies
 
   get 'about' => 'welcome#about'
 

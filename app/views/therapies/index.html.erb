@@ -1,0 +1,4 @@
+<h1>All Therapies</h1>
+<% @therapies.each do |therapy| %>
+  <p><%= link_to therapy.title, therapy %></p>
+<% end %>
